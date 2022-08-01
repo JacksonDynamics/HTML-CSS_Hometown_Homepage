@@ -6,28 +6,25 @@
 body {
     text-align: center;
     margin: 0;
-    text-shadow: 0px 0px 8px black;
     font-family: fantasy;
 }
 
 #hero {
+    text-shadow: 0px 0px 20px black;
     background-image: url("images/Portland.jpg");
-    background-repeat: no-repeat;
     background-size: cover;
     color: white;
-    padding: 50px;
-    height:auto;
+    padding: 50px;    
     display: flex;
     flex-direction: column;
     align-items: center;
-    
 }
 
 #hero-title {
     font-family: Portland;
     font-weight: bold;
-    font-size: 50px;
-    margin-bottom: 100px;
+    font-size: 80px;
+    margin:50px 0px 100px;
 }
 
 #hero-description {
@@ -37,29 +34,65 @@ body {
     border-radius: 10px;
 }
 
-#main-content {
-    display: flex;
-    justify-content: center;
+#activities {
+    display: block;
+    height: 10%;
 }
 
 #activities-description {
-    margin-top: 80px;
+    margin: 80px 0px 0px;
     display: block;
     font-size: 50px;
     font-family: Portland;
     font-weight: bold;
     text-shadow: none;
+    height: 100px
 }
 
+#main-content {
+    display: flex;
+    justify-content: center;
+    height: 500px
+}
 .container {
     width: 400px;
-    height: 240px;
+    height: 200px;
     padding:0 30px;
+
 }
 
 /* Resize images */
 .container img {
+    border: 2px solid black;
+    border-radius: 50%;
     max-width: 100%;
     max-height: 100%;
     
+}
+
+#guide {
+    display:flex;
+    flex-direction: column;
+    background-color: darkolivegreen;
+    height: 300px;
+}
+
+.avatar {
+    width: 150px;
+}
+
+.card {
+    width: 350px;
+    margin: auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    background: #ddebf8;
+    color: #2b2839;
+    border-bottom: 6px solid #d8cefe;
+}
+
+.border-blue {
+    border: 1px dotted blue;
 }
