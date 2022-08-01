@@ -15,17 +15,19 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     color: white;
-    padding: 40px;
+    padding: 50px;
     height:auto;
     display: flex;
     flex-direction: column;
     align-items: center;
+    
 }
 
 #hero-title {
     font-family: Portland;
     font-weight: bold;
     font-size: 50px;
+    margin-bottom: 100px;
 }
 
 #hero-description {
@@ -33,5 +35,31 @@ body {
     opacity: 0.8;
     padding: 12px 20px;
     border-radius: 10px;
+}
 
+#main-content {
+    display: flex;
+    justify-content: center;
+}
+
+#activities-description {
+    margin-top: 80px;
+    display: block;
+    font-size: 50px;
+    font-family: Portland;
+    font-weight: bold;
+    text-shadow: none;
+}
+
+.container {
+    width: 400px;
+    height: 240px;
+    padding:0 30px;
+}
+
+/* Resize images */
+.container img {
+    max-width: 100%;
+    max-height: 100%;
+    
 }
